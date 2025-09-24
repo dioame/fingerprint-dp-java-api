@@ -1,11 +1,12 @@
+com\fingerprint\controller\FingerprintController.class
+com\fingerprint\dto\FingerprintRequest$Header.class
+com\fingerprint\dto\FingerprintRequest$Format.class
 com\fingerprint\dto\FingerprintRequest$FormatInfo.class
 com\fingerprint\dto\FingerprintTemplate.class
 com\fingerprint\dto\FingerprintResponse.class
-com\fingerprint\controller\FingerprintController.class
+com\fingerprint\config\DigitalPersonaConfig.class
 com\fingerprint\dto\FingerprintRequest$FingerprintSample.class
 com\fingerprint\service\FingerprintProcessingService.class
-com\fingerprint\dto\FingerprintRequest$Header.class
 com\fingerprint\service\FingerprintProcessingService$1.class
 com\fingerprint\dto\FingerprintRequest.class
 com\fingerprint\FingerprintServiceApplication.class
-com\fingerprint\dto\FingerprintRequest$Format.class

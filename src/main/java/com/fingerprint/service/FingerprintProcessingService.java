@@ -122,8 +122,13 @@ public class FingerprintProcessingService {
             return convertFmdToXml(enrollmentFmd);
             
         } catch (UareUException e) {
-            throw new RuntimeException("DigitalPersona SDK error: " + e.getMessage(), e);
+            System.err.println("DigitalPersona SDK error code: " + e.getCode());
+            System.err.println("Error details: " + e.getMessage());
+            e.printStackTrace();
+            throw new RuntimeException("DigitalPersona SDK error: " + e.getMessage() + " (Code: " + e.getCode() + ")", e);
         } catch (Exception e) {
+            System.err.println("Unexpected error: " + e.getMessage());
+            e.printStackTrace();
             throw new RuntimeException("Failed to process fingerprints: " + e.getMessage(), e);
         }
     }
